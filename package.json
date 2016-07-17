@@ -1,0 +1,31 @@
+{
+  "name": "sounds-fun",
+  "version": "1.0.0",
+  "description": "Web Audio Library for Brighton Digital Festival",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "live-server src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benji6/sounds-fun.git"
+  },
+  "keywords": [
+    "Web",
+    "Audio",
+    "API",
+    "Brighton",
+    "Digital",
+    "Festival"
+  ],
+  "author": "Ben Hall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benji6/sounds-fun/issues"
+  },
+  "homepage": "https://github.com/benji6/sounds-fun#readme",
+  "devDependencies": {
+    "live-server": "^1.0.0"
+  }
+}
