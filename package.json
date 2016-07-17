@@ -2,9 +2,11 @@
   "name": "sounds-fun",
   "version": "1.0.0",
   "description": "Web Audio Library for Brighton Digital Festival",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "jsnext:main": "src/index.js",
   "scripts": {
-    "start": "live-server src",
+    "build": "mkdir -p dist && rollup -f cjs src/index.js | babel -o dist/index.js",
+    "start": "rollup -w -f cjs test/index.js -o test/bundle.js & live-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +28,10 @@
   },
   "homepage": "https://github.com/benji6/sounds-fun#readme",
   "devDependencies": {
-    "live-server": "^1.0.0"
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.13.2",
+    "live-server": "^1.0.0",
+    "rollup": "^0.34.10",
+    "rollup-watch": "^2.5.0"
   }
 }
