@@ -23,6 +23,7 @@ const audioContext = new AudioContext
 
 const loadSample = soundsFun(audioContext)
 const playMySample = loadSample('samples/my-sample.wav')
+
 playMySample({
   echo: {feedback: 0.5, time: 0.3},
   filter: {frequency: 1500, resonance: 10},
