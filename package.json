@@ -1,6 +1,6 @@
 {
   "name": "sounds-fun",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Web Audio Library for Brighton Digital Festival",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
